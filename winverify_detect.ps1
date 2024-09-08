@@ -30,9 +30,9 @@ $reg2 = compareRegistryValue -regPath "HKLM:\Software\Wow6432Node\Microsoft\Cryp
 
 #checks if both are true and exits
 if ($reg1 -and $reg2){
-        Write-Output "The registry key is set to the expected value"
+        #Write-Output "The registry key is set to the expected value"
         exit 0
 } else {
-        Write-Output "The registy key is not set to the expected value - needs remediation"
+        #Write-Output "The registy key is not set to the expected value - needs remediation"
         exit 1
 }
